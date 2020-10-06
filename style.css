@@ -5,6 +5,11 @@
     font-family: "Roboto";
   }
 
+  h1 {
+    text-align: center;
+    color: #172426;
+  }
+
   .item {
     margin-bottom: 10px;
     width: 300px;
@@ -19,7 +24,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: rgb(64, 0, 214);
+    background: rgb(95, 67, 161);
   }
   
   .items {
