@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draggable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div :key="index" class="items" v-for="(item, index) of items" :style="{ 'background-color': colors[index]}">
+      <div class="item" draggable="true" @drag="dragStart(index)" @dragover="dragOver(index, event)" @dragend="dragEnd()"
+        @dragleave="dragLeave()" :data-drop-here="canDropHere(index)">
+        <p>
+          {{ index }} - {{ item.name }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

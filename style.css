@@ -1,0 +1,34 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto";
+  }
+
+  .item {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgb(64, 0, 214);
+  }
+  
+  .items {
+    flex-direction: row;
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .item p {
+    font-size: 40px;
+    color: #fff;
+  }
